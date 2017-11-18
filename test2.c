@@ -16,13 +16,8 @@ void init_cells()
       cell[i][j] = 0;
     }
   }
-
-  //bghina cellules 7yin ykono 10%
-  for (i = 0; i < HEIGHT; i++) {
-    for (j = 0; j < WIDTH; j++) {
-      cell[i][j] = (rand()%100<=10)? 1 : 0;;
-    }
-  }
+  cell[1][1] = 1 ;
+  cell[1][2] = 1;
 }
 void print_cells(FILE *fp)
 {
